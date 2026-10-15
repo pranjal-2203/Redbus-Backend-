@@ -1,0 +1,1 @@
+ALTER TABLE "buses" ADD COLUMN "operator" text;
