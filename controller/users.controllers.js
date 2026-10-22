@@ -58,7 +58,6 @@ const signup = async (req, res, next) => {
                 message: "All fields are required"
             });
         }
-
         const UserExists = await usersObject.userExist(email, phone);
         if (UserExists) {
             return res.status(400).json({
